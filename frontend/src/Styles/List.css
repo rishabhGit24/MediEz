@@ -1,0 +1,106 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+}
+
+.members-list-container {
+  display: flex;
+}
+
+.sidebar {
+  width: 200px;
+  background-color: #45905f;
+  color: white;
+  padding: 20px;
+}
+
+.menu-item {
+  margin: 10px 0;
+  cursor: pointer;
+}
+
+.main-content {
+  flex-grow: 1;
+  padding: 20px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.header .btn {
+  margin-left: 10px;
+  background-color: #45905f;
+}
+
+.members-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+}
+
+.members-table th,
+.members-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+.members-table th {
+  background-color: #45905f;
+  color: white;
+}
+
+.members-table .icon-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.members-table .btn {
+  background-color: #45905f;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.members-table .btn:hover {
+  background-color: #45905f;
+  transform: scale(1.05);
+}
+
+.members-table .active {
+  color: green;
+}
+
+.members-table .inactive {
+  color: red;
+}
+.deleteBtn {
+  background-image: url("../Images/dustbin.png"); /* Path to your image */
+  background-size: contain; /* Ensure the image covers the button area without being stretched */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+  background-position: center; /* Center the image within the button */
+  width: 24px; /* Adjust based on your image's size */
+  height: 24px; /* Adjust based on your image's size */
+  display: inline-block; /* Keeps the button inline */
+  border: none; /* Removes any default border */
+  cursor: pointer; /* Changes cursor to pointer on hover to indicate it's clickable */
+  background-color: transparent !important;
+}
+
+.custom-navbar-height {
+  height: 80px; /* Adjust this value as needed to reduce the navbar height */
+}
+
+.scrollable-table {
+  max-height: 500px; /* Adjust based on your needs */
+  overflow-y: auto;
+}

@@ -1,0 +1,12 @@
+.side-div{
+    margin: 2rem;
+}
+
+.container>h3,.container>h1{
+    font-size: larger;
+    font-weight: bolder;
+}
+
+.container>p{
+    margin-bottom: 1rem;
+}
