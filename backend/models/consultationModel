@@ -1,0 +1,9 @@
+const mongoose = require("mongoose");
+
+const consultationSchema = new mongoose.Schema({
+  patientId: { type: mongoose.Schema.Types.ObjectId, ref: "Patient", required: true },
+  doctorId: { type: mongoose.Schema.Types.ObjectId, ref: "Doctor", required: true },
+  date: { type: Date, default: Date.now },
+});
+
+module.exports = mongoose.model("Consultation", consultationSchema);
